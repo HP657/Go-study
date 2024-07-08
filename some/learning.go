@@ -1,9 +1,9 @@
-package main
+package some
 
 import (
 	"fmt"
 
-	"github.com/HP657/go-study/something"
+	"github.com/HP657/go-study/some/something"
 )
 
 func main() {
