@@ -1,9 +1,9 @@
-package some
+package use_module
 
 import (
 	"fmt"
 
-	"github.com/HP657/go-study/some/something"
+	"github.com/HP657/go-study/use_module/something"
 )
 
 func main() {
