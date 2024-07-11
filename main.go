@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 // func multiply(a int, b int) int {
 // 	return a * b
@@ -10,15 +13,24 @@ import "fmt"
 // 	return len(name), strings.ToUpper(name)
 // }
 
-func repeatMe(words ...string) {
-	for i := 0; i < len(words); i++ {
-		fmt.Println(words[i])
-	}
-	fmt.Println(words)
+func lenAndUpper(name string) (lenght int, uppercase string) {
+	defer fmt.Println("I'm done") // 함수 호출 끝나면 실행
+	lenght = len(name)
+	uppercase = strings.ToUpper(name)
+	return
 }
 
+// func repeatMe(words ...string) {
+// 	for i := 0; i < len(words); i++ {
+// 		fmt.Println(words[i])
+// 	}
+// 	fmt.Println(words)
+// }
+
 func main() {
-	repeatMe("hyo", "jun", "man")
+	totalLenght, up := lenAndUpper("hyojun")
+	fmt.Println(totalLenght, up)
+	// repeatMe("hyo", "jun", "man")
 	// totalLengtht, upperName := lenAndUpper("HP657")
 	// fmt.Println(totalLengtht, upperName)
 	// fmt.Println(multiply(2, 4))
