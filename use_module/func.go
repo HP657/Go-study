@@ -1,4 +1,4 @@
-package main
+package use_module
 
 import (
 	"fmt"
@@ -27,7 +27,7 @@ func lenAndUpper(name string) (lenght int, uppercase string) {
 // 	fmt.Println(words)
 // }
 
-func main() {
+func main1() {
 	totalLenght, up := lenAndUpper("hyojun")
 	fmt.Println(totalLenght, up)
 	// repeatMe("hyo", "jun", "man")
