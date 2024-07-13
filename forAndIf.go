@@ -15,7 +15,16 @@ func supperAdd(numbers ...int) int {
 	return sum
 }
 
+func canIDringk(age int) bool {
+	if koreanAge := age + 2; koreanAge < 18 {
+		return false
+	}
+	return true
+
+}
+
 func main() {
-	total := supperAdd(1, 2, 3, 4, 5, 6, 7, 8, 9)
-	fmt.Print(total)
+	fmt.Println(canIDringk(16))
+	// total := supperAdd(1, 2, 3, 4, 5, 6, 7, 8, 9)
+	// fmt.Print(total)
 }
